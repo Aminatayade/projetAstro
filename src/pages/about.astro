@@ -3,10 +3,10 @@ import '../styles/global.css';
 import Footer from '../components/Footer.astro';
 const pageTitle = "À propos de moi";
 const identity = {
-  firstName: "Sarah",
-  country: "Canada",
-  occupation: "Rédactrice technique",
-  hobbies: ["photographie", "observation des oiseaux", "baseball"],
+  firstName: "Aminata",
+  country: "Senegal",
+  occupation: "Technicienne Superieure en informatique",
+  hobbies: ["photographie", "lecture", "handball"],
 };
 
 const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Rédaction de documentation"];
@@ -47,7 +47,6 @@ const textCase = "uppercase";
         <a href="/">Accueil</a>
         <a href="/about/">À propos</a>
         <a href="/blog/">   Blog</a>
-        <h1>À propos de moi</h1>
         <h1>{pageTitle}</h1>
         <h2>... et de mon nouveau site Astro !</h2>
       
@@ -59,7 +58,7 @@ const textCase = "uppercase";
         <li>Je m'appelle {identity.firstName}.</li>
         <li>Je vis au {identity.country} et je travaille en tant que {identity.occupation}.</li>
         {identity.hobbies.length >= 2 &&
-            <li>Deux de mes loisirs sont : {identity.hobbies[0]} et {identity.hobbies[1]}</li>
+            <li>Deux de mes loisirs sont : {identity.hobbies[2]} et {identity.hobbies[1]}</li>
         }
         </ul>
         <p>Voici mes compétences :</p>
